@@ -8,4 +8,5 @@ public interface ArticleDao {
     List<Article> findAllArticle();
     Article findArticleById(int id);
     int getTotal();
+    int addArticle(String articleName);
 }

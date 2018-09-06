@@ -17,4 +17,8 @@
         select count(*) from article
     </select>
 
+    <insert id="addArticle" parameterType="string">
+        insert into Article values(null,#{articleName})
+    </insert>
+
 </mapper>

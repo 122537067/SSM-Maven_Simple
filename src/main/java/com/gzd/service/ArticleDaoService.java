@@ -10,4 +10,5 @@ public interface ArticleDaoService {
      * @return
      */
     List<Article> showAllArticle();
+    boolean addArticle(String articleName);
 }

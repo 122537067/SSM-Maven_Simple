@@ -50,4 +50,10 @@ public class ArticleDaoTest {
         int num = articleDao.getTotal();
         System.out.println(num);
     }
+
+    @Test
+    public void addArticle(){
+        boolean add = articleDaoService.addArticle("插入一个中文");
+        System.out.println(add);
+    }
 }

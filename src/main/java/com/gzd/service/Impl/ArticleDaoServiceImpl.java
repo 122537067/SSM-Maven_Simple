@@ -19,4 +19,11 @@ public class ArticleDaoServiceImpl implements ArticleDaoService {
         List<Article> list = articleDao.findAllArticle();
         return list;
     }
+
+    @Override
+    public boolean addArticle(String articleName) {
+        int i = articleDao.addArticle(articleName);
+        if(i>0) return true;
+        return false;
+    }
 }

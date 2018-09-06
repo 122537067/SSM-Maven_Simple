@@ -9,6 +9,6 @@ public class WebController {
     @RequestMapping("/")
     public String index() {return "index";}
 
-    @RequestMapping("/login")
-    public String login() {return "login";}
+    @RequestMapping("/add")
+    public String add() {return "add";}
 }
